@@ -11,6 +11,7 @@ if (process.env.DB_URL) {
     sequelizeInstance = new sequelize(
         process.env.DB_NAME,
         process.env.USERNAME,
+        process.env.PASSWORD,
         '',
         {
             host: "localhost",
