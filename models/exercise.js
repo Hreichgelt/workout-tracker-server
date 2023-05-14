@@ -20,27 +20,5 @@ exercise.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        reps: {
-            type: DataTypes.VARCHAR(255),
-            allowNull: false,
-            unique: false,
-        },
-        sets: {
-            type: DataTypes.VARCHAR(255),
-            allowNull: false,
-            unique: false,
-        },
-        your_reps: {
-            type: DataTypes.VARCHAR(255),
-            allowNull: true,
-            unique: false,
-        },
-        your_sets: {
-            type: DataTypes.VARCHAR(255),
-            allowNull: true,
-            unique: false,
-        },
-        
-
     }
 )
