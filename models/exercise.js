@@ -2,14 +2,14 @@ const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
-class workout extends Model {}
+class exercise extends Model {}
 
-workout.init(
+exercise.init(
     {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            primaryKey: true,
+            primaryKey: false,
             autoIncrement: true,
         },
         name: {

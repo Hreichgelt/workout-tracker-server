@@ -4,18 +4,18 @@ const sequelize = require("../config/connection");
 
 user.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
+        user_id: {
+            type: DataTypes.SERIAL,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
         username: {
-            type: DataTypes.STRING,
+            type: DataTypes.VARCHAR(255),
             allowNull: false,
         },
         email: {
-            type: DataTypes.STRING,
+            type: DataTypes.VARCHAR(255),
             allowNull: false,
             unique: true,
             validate: {
@@ -23,7 +23,7 @@ user.init(
             },
         },
         password: {
-            type: DataTypes.STRING,
+            type: DataTypes.VARCHAR(255),
             allowNull: false,
             validate: {
                 len: [10],
